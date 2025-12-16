@@ -102,3 +102,7 @@ I chose **InstantID** (`zsxkib/instant-id`) over standard Face Swap or LoRA trai
 * **Scene Selector:** Allow users to choose between "Magical Forest", "Space", or "Underwater" prompts.
 * **Face Quality Check:** Implement OpenCV on the backend to reject blurry or obstructed faces before spending API credits.
 * **Print-Ready Upscaling:** Integrate a final Super-Resolution pass (RealESRGAN) for 300 DPI book printing.
+
+--- 
+
+Made with ❤️ by Chetan Atram
