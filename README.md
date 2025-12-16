@@ -4,13 +4,19 @@ A personalized AI storybook generator that turns a child's photo into a high-fid
 
 ![App Home Screen](./frontend/public/sample2.png)
 *The modern, glassmorphic UI designed for a magical user experience.*
-![App Result](./frontend/public/sample1.png)
 
 ## 🚀 Features
 * **Zero-Shot Personalization:** No training required. Upload a photo and get a result in ~15 seconds.
 * **High-Fidelity AI:** Uses `InstantID` (via Replicate) for state-of-the-art identity preservation + style transfer.
 * **Robust Backend:** FastAPI server handles binary streams, file locking safety (Windows-compatible), and error recovery.
 * **Magical UI:** Fully responsive Next.js frontend with TailwindCSS v4, glassmorphism, and smooth animations.
+
+---
+
+## 📸 Results
+
+*Left: Original Upload | Right: AI Generated "Storybook" Style*
+![App Result](./frontend/public/sample1.png)
 
 ---
 
@@ -76,12 +82,6 @@ npm install
 npm run dev
 ```
 *The frontend will launch at `http://localhost:3000`*
-
----
-
-## 📸 Results
-
-*Left: Original Upload | Right: AI Generated "Storybook" Style*
 
 ---
 
