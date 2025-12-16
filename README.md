@@ -85,6 +85,43 @@ npm run dev
 
 ---
 
+## 📝 Architecture Diagram
+
+graph TD
+    subgraph Client ["Frontend (Next.js)"]
+        UI[User Interface]
+        Upload[Upload Component]
+        Display[Result Display]
+    end
+
+    subgraph Server ["Backend (FastAPI)"]
+        API[API Endpoint /generate]
+        Temp[Temp File Handler]
+        Static[Static File Server]
+    end
+
+    subgraph Cloud ["AI Cloud (Replicate)"]
+        Model[InstantID Model]
+        GPU[H100/A100 GPUs]
+    end
+
+    %% Data Flow
+    User((User)) -->|1. Uploads Photo| UI
+    UI --> Upload
+    Upload -->|2. POST Image (FormData)| API
+    
+    API -->|3. Save Bytes| Temp
+    Temp -->|4. Send File Handle| Model
+    
+    Model -->|5. Processing| GPU
+    GPU -->|6. Return Image/Bytes| API
+    
+    API -->|7. Save to Disk| Static
+    Static -->|8. Return URL| Display
+    Display -->|9. View Result| User
+
+---
+
 ## 📝 Engineering Decisions & Limits
 
 ### **Why InstantID?**
