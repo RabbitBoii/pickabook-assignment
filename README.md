@@ -89,6 +89,7 @@ npm run dev
 
 ![Architecture Flow](./frontend/public/architecture.png)
 
+---
 
 ## 📝 Engineering Decisions & Limits
 
