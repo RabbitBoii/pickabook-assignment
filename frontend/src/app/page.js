@@ -82,12 +82,10 @@ export default function Home() {
           </div>
         )}
 
-        {/* State 3: Results */}
         {status === "success" && (
           <div className="animate-fade-in">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8 items-center">
 
-              {/* Original */}
               <div className="flex flex-col gap-2">
                 <h3 className="text-xs font-bold text-slate-400 uppercase tracking-widest pl-2">Original</h3>
                 <div className="aspect-3/4 rounded-2xl overflow-hidden shadow-inner bg-slate-100 border-4 border-white transform -rotate-2 transition-transform hover:rotate-0 duration-300">
@@ -95,7 +93,6 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Result */}
               <div className="flex flex-col gap-2">
                 <h3 className="text-xs font-bold text-purple-500 uppercase tracking-widest pl-2 flex items-center gap-1">
                   ✨ The Masterpiece
